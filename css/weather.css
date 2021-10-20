@@ -1,0 +1,464 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: RobotoLight;
+    src: url(../font/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: RobotoRegular;
+    src: url(../font/Roboto-Regular.ttf);
+}
+
+
+.container {
+    position: relative;
+    height: 100vh;
+
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -3;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.video-container video {
+    position: relative;
+    top: 0%;
+    left: 0%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transform: translate (-50%, -50%);
+}
+
+
+header {
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+main {
+    background: rgba(0, 0, 0, 0.4);
+    height: 85vh;
+}
+
+h1 {
+    background: url(../images/logoWeather.png) center center no-repeat;
+    width: 100%; 
+    height: 75px;
+    font-size: 0px;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.iconoBucar {
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.form input {
+    background: none;
+    color: white;
+    border: none;
+    outline: 0px;
+    border-bottom: 3px solid white;
+    font-size: 16px;
+    width: 50%;
+    font-family: RobotoRegular;
+    margin-right: 20px;
+}
+
+::placeholder {
+    color: white;
+    font-size: 16px;
+    font-family: RobotoRegular;
+}
+
+.form .labelCiudades {
+    font-size: 0px;
+}
+
+
+.form button {
+    background: none;
+    border: 2px solid white;
+    outline: 0px;
+    font-size: 16px;
+    width: 80px;
+    font-family: RobotoRegular;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background: white;
+    color: black;
+}
+
+.PaisYCiudad {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: RobotoRegular;
+    color: white;
+    padding-bottom: 30px;
+}
+
+.pais {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.ciudad {
+    font-size: 50px;
+   
+}
+
+.todasLasTemperaturas {
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedorTempActual {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.temperaturaActual {
+    font-size: 17px;
+}
+
+.temperaturas {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+   
+}
+
+.contenedorTempMin {
+    display: flex;
+    justify-content: center;
+}
+
+.contenedorTempMax {
+    display: flex;
+    justify-content: center;
+}
+
+.imgMinima {
+    width: 25px;
+    margin-right: 5px;
+}
+
+.imgMaxima {
+    width: 25px;
+    margin-right: 5px;
+}
+
+.separadorTemp {
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+.seccionValores {
+    height: 40vh;
+}
+
+.h2InformacionClima {
+    font-size: 0px;
+}
+
+.contenedorParte1 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-content: center;
+    margin: auto;
+}
+
+
+.divContenedorPresionAtmosferica {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.figurePresionAtmosferica {
+    margin-top: 5px;
+    margin-right: 20px;
+}
+.iconoPresionAtmosferica {
+    width: 25px;
+}
+.tituloPresionAtmosferica {
+    font-family: RobotoRegular;
+    color: white;
+}
+.pValorPresionAtmosferica {
+    font-family: RobotoLight;
+    color: white;
+}
+
+
+
+.divContenedorHumedad {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-right: 90px;
+}
+.figureHumedad {
+    margin-top: 5px;
+    margin-right: 20px;
+}
+.iconoHumedad {
+    width: 25px;
+}
+.tituloHumedad {
+    font-family: RobotoRegular;
+    color: white;
+}
+.pValorHumedad {
+    font-family: RobotoLight;
+    color: white;
+}
+
+
+
+.contenedorParte2 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-content: center;
+    margin: auto;
+}
+
+
+.divContenedorSensacionTermica {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-right: 90px;
+}
+.figureSensacionTermica {
+    margin-top: 5px;
+    margin-right: 20px;
+}
+.iconoSensacionTermica {
+    width: 25px;
+}
+.tituloSensacionTermica {
+    font-family: RobotoRegular;
+    color: white;
+}
+.pValorSensacionTermica {
+    font-family: RobotoLight;
+    color: white;
+}
+
+
+
+.divContenedorVelocidadDeViento {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-right: 80px;
+}
+.figureVelocidadDeViento {
+    margin-top: 5px;
+    margin-right: 20px;
+}
+.iconoVelocidadDeViento {
+    width: 25px;
+}
+.tituloVelocidadDeViento {
+    font-family: RobotoRegular;
+    color: white;
+}
+.pValorVelocidadDeViento {
+    font-family: RobotoLight;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+/*TABLET:*/
+@media screen and (min-width: 600px) {
+
+    .form input {
+        width: 60%;
+    }
+
+    .seccionValores {
+        width: 100%;
+        display: flex;
+        flex-direction: row;  
+    }
+
+    .contenedorParte1 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        height: 80%; 
+    }
+    .contenedorParte2 {
+        margin-top: 0px;  
+        margin-bottom: 0px;
+        height: 80%; 
+    }
+
+
+    .contenedorTempActual {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .temperaturaActual {
+        font-size: 17px;
+    }
+
+
+    
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*DESKTOP:*/
+@media screen and (min-width: 850px) {
+
+    header {
+        width: 100%;
+        height: 15vh;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+
+    .seccionInput {
+        width: 70%;
+        background: none;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: flex-end;
+        padding-right: 100px;
+    }
+
+    .PaisYCiudad {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        width: 100%;
+
+    }
+    
+    .pais {
+        font-size: 40px;
+        margin-left: 90px;
+     
+    }
+    
+    .ciudad {
+        font-size: 100px;
+    
+    }
+
+    .temperaturas {
+        padding-bottom: 30px;
+       
+    }
+    
+
+    .form {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .form input {
+        width: 35%;
+    }
+ 
+    .seccionValores {
+        width: 30%;
+        height: 85vh;
+        display: flex;
+        flex-direction: column;
+       
+    }
+
+    .contenedorParte1 {
+        height: 40%;   
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    .contenedorParte2 {
+        height: 40%;    
+        margin-top: 0px;
+    }
+
+
+    .contenedorTempActual {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+    
+    .temperaturaActual {
+        font-size: 60px;
+    }
+
+    
+}

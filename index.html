@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/weather.css">
+    <link rel="icon" href="images/cloudy.svg">
+    <title>Lucas Gonzalo Rosi | PWA</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="video-container">
+            <video src="videos/mundo.mp4" autoplay muted loop class="video"></video>
+        </div> 
+        
+        <header>
+            <h1>Weather</h1>
+        </header>
+    
+        <main class="main">
+            <section class="seccionInput">
+                <h2 class="h2InformacionClima">City</h2>
+                <div class="form">
+                    <figure>
+                        <img class="iconoBucar" src="images/search.svg" width="20" alt="Lupa para buscar" />
+                    </figure>
+                    <label class="labelCiudades">City</label>
+                    <input
+                    id="city" 
+                    name="ciudades" 
+                    placeholder="Find the city" 
+                    type="text"
+                    autoComplete="off"
+                    />
+    
+                    <button class="btnSearch">Search</button>
+                </div>
+    
+                <div class="PaisYCiudad">
+                    <p class="ciudad"><b>City</b></p>
+                    <p class="pais">Country</p>
+                    <div class="todasLasTemperaturas">
+                        <div class="contenedorTempActual">
+                            <p class="temperaturaActual">0 °C</p>
+                        </div>
+                        <div class="temperaturas">
+                            <div class="contenedorTempMin">
+                                <figure>
+                                    <img class="imgMinima" src="images/minimumTemperature.png" alt="Temperatura mínima" />
+                                </figure>
+                                <p class="temperaturaMinimo">0 °C</p>
+                            </div>
+                            <div class="separadorTemp">/</div>
+                            <div class="contenedorTempMax">
+                                <figure>
+                                    <img class="imgMaxima" src="images/maximumTemperature.png" alt="Temperatura máxima" />
+                                </figure>
+                                <p class="temperaturaMaxima">0 °C</p>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </section>
+    
+    
+            <section class="seccionValores">
+                <h2 class="h2InformacionClima">Weather information</h2>
+                <div class="contenedorParte1">
+                    <div class="divContenedorPresionAtmosferica">
+                        <figure class="figurePresionAtmosferica">
+                            <img 
+                            class="iconoPresionAtmosferica" 
+                            src="images/atmosphericPressure.png" 
+                            alt="Medición de la Presión Atmosférica" />
+                        </figure>
+                        <div class="divValorPresionAtmosferica">
+                            <p class="tituloPresionAtmosferica">Atmospheric Pressure</p>
+                            <p class="pValorPresionAtmosferica">0 mb</p>
+                        </div>    
+                    </div>
+        
+                    <div class="divContenedorHumedad">
+                        <figure class="figureHumedad">
+                            <img 
+                            class="iconoHumedad" 
+                            src="images/humidity.png"
+                            alt="Medición de la Humedad" />
+                        </figure>
+                        <div class="divValorHumedad">
+                            <p class="tituloHumedad">Humidity</p>
+                            <p class="pValorHumedad">0 %</p>
+                        </div>
+                    </div>    
+                </div>
+    
+                <div class="contenedorParte2">
+                    <div class="divContenedorSensacionTermica">
+                        <figure class="figureSensacionTermica">
+                            <img 
+                            class="iconoSensacionTermica" 
+                            src="images/feelsLike.png" 
+                            alt="Medición de la Sensación Térmica" />
+                        </figure>
+                        <div class="divValorSensacionTermica">
+                            <p class="tituloSensacionTermica">Feels Like</p>
+                            <p class="pValorSensacionTermica">0 °C</p>
+                        </div>    
+                    </div>
+                    
+                    <div class="divContenedorVelocidadDeViento">
+                        <figure class="figureVelocidadDeViento">
+                            <img 
+                            class="iconoVelocidadDeViento" 
+                            src="images/wind.png" 
+                            alt="Medición de la Velocidad del Viento" />
+                        </figure>
+                        <div class="divValorVelocidadDeViento">
+                            <p class="tituloVelocidadDeViento">Wind Speed</p>
+                            <p class="pValorVelocidadDeViento">0 km/h</p>
+                        </div>    
+                    </div>
+                </div>
+            </section>
+     
+        </main>
+        
+    </div>
+    
+
+
+    <script src="js/weather.js"></script>
+
+    
+    
+</body>
+</html>
