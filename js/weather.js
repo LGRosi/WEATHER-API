@@ -57,25 +57,25 @@ function celsius (kelvin) {
 function videosClima (data) {
     switch (data.weather[0].main) {
         case 'Thunderstorm':
-            videoClima.src = 'rain.mp4';
+            videoClima.src = '../rain.mp4';
           break;
         case 'Drizzle':
-            videoClima.src = 'rain.mp4';
+            videoClima.src = '../rain.mp4';
           break;
         case 'Rain':
-            videoClima.src = 'rain.mp4';
+            videoClima.src = '../rain.mp4';
           break;
         case 'Snow':
-            videoClima.src = 'snow.mp4';
+            videoClima.src = '../snow.mp4';
           break;                        
         case 'Clear':
-            videoClima.src = 'sun.mp4';
+            videoClima.src = '../sun.mp4';
           break; 
         case 'Clouds':
-            videoClima.src = 'cloudy.mp4';
+            videoClima.src = '../cloudy.mp4';
             break;  
         default:
-            videoClima.src = 'mundo.mp4';
+            videoClima.src = '../mundo.mp4';
       }
    
 }
